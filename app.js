@@ -1,83 +1,83 @@
 const OFFICIAL_SITE = 'https://hijo790401.github.io/shen-yao-portal/';
 
-const content = {
+const i18n = {
   zh: {
-    nav: { overview: 'Overview', modules: 'Modules', structure: 'Structure', architecture: 'Architecture', official: 'Official Website' },
+    nav: { overview: '總覽', modules: '模組展示', structure: '結構展示', architecture: '架構部署', official: '官方網站' },
     overview: {
       eyebrow: 'SCBKR × WIF 決策資格審計引擎展示站',
       title: 'SCBKR × WIF 決策資格審計引擎演示',
-      subtitle: '將 Website、Image、Finance 三類輸入物件編譯為責任鏈結構，再於進入人的決策鏈前完成資格審計。',
-      statement: '不是黑名單。不是分類器。是前置治理展示層。',
-      ctaModules: 'View Modules', ctaStructure: 'View Structure', ctaArchitecture: 'View Architecture', ctaOfficial: 'Official Website',
-      notBlacklistTitle: 'Why This Is Not a Blacklist',
+      subtitle: '將網站、影像、金融三類輸入物件編譯為責任鏈結構，並在進入人類決策鏈前完成資格審計。',
+      statement: '這不是黑名單，也不是分類器，而是前置治理展示層。',
+      ctaModules: '查看模組展示', ctaStructure: '查看結構展示', ctaArchitecture: '查看架構部署', ctaOfficial: '官方網站',
+      notBlacklistTitle: '為什麼這不是黑名單',
       notBlacklistCards: [
-        { title: 'Blacklist', desc: 'records：記錄既有被標記主體。' },
-        { title: 'Detector', desc: 'estimates：估計可疑程度訊號。' },
-        { title: 'This Engine', desc: 'compile + audit：將輸入編譯為責任鏈物件並審計決策資格。' }
+        { title: '黑名單', desc: '只做已知標記主體的名單記錄。' },
+        { title: '偵測器', desc: '只做可疑訊號估計，無法提供完整治理責任鏈。' },
+        { title: '本引擎', desc: '把輸入編譯為責任鏈物件，並審計是否具備驅動決策的資格。' }
       ]
     },
     modules: {
       title: '三模組展示',
-      subtitle: '以預設案例展示 Website、Image、Finance 三種輸入物件如何被編譯為責任鏈結構，並進入決策資格審計流程。',
-      note: '本頁為展示模式，不提供自由輸入。',
-      selector: 'Sample Case Selector', pipeline: 'Pipeline 展示區', result: '結果面板',
-      objectSummary: 'Object Summary', objectType: 'Object Type', sampleName: 'Sample Name', shortDescription: 'Short Description',
-      calResult: 'CAL Result', comment: 'Comment', authority: 'Authority', liability: 'Liability', misCode: 'Misalignment Code',
-      scbkr: 'SCBKR Summary', riskType: 'Risk Type', missingProof: 'Missing Proof', requiredVerification: 'Required Verification',
-      actionGate: 'Action Gate', replaySummary: 'Replay Summary'
+      subtitle: '以預設案例展示網站、影像、金融輸入如何進入逐層治理審計流程。',
+      note: '本頁僅提供展示模式，不提供自由輸入。',
+      selector: '案例切換區', pipeline: '流程展示區', result: '結果面板',
+      objectSummary: '物件摘要', objectType: '物件類型', sampleName: '案例名稱', shortDescription: '簡短說明',
+      calResult: 'CAL 結果', comment: '評論向度', authority: '權威向度', liability: '承擔向度', misCode: '錯位代碼',
+      scbkr: 'SCBKR 摘要', riskType: '風險類型', missingProof: '缺失證明', requiredVerification: '必要驗證',
+      actionGate: '行動閘門', replaySummary: '回放摘要'
     },
     structure: {
       title: '結構與公式展示',
-      subtitle: 'Website / Image / Finance 三種輸入物件如何被編譯成責任鏈結構，再進入 CAL / SCBKR / R-Lock / VOID 治理核心。',
-      notBlacklist: 'Why This Is Not a Blacklist',
+      subtitle: '展示網站、影像、金融輸入如何編譯為責任鏈物件，再進入 CAL、SCBKR、R-Lock、VOID。',
+      notBlacklist: '為什麼這不是黑名單',
       compare: [
-        { title: 'Blacklist', desc: 'record：記錄名單。' },
-        { title: 'Detector', desc: 'estimate：估計可疑。' },
-        { title: 'This engine', desc: 'compile + audit eligibility：審計決策資格。' }
+        { title: '黑名單', desc: '記錄名單。' },
+        { title: '偵測器', desc: '估計可疑。' },
+        { title: '本引擎', desc: '編譯責任鏈並審計決策資格。' }
       ],
-      mappingTitle: 'W / I / F Object Mapping',
+      mappingTitle: 'W / I / F 物件映射',
       mapping: [
-        { title: 'Website', items: ['domain / path / slug', 'authority borrow', 'responsibility window'] },
-        { title: 'Image', items: ['OCR / logo / CTA', 'visual authority', 'callback gap'] },
-        { title: 'Finance', items: ['payer / payee / authorization', 'urgency', 'rollback path'] }
+        { title: '網站', items: ['網域 / 路徑 / 標識', '權威借用訊號', '責任窗口'] },
+        { title: '影像', items: ['文字辨識 / 標誌 / 行動號召', '視覺權威訊號', '回撥缺口'] },
+        { title: '金融', items: ['付款方 / 收款方 / 授權', '急迫標記', '回滾路徑'] }
       ],
-      stackTitle: 'Governance Stack',
+      stackTitle: '治理堆疊',
       stack: [
-        { title: 'CAL', desc: '檢視 comment / authority / liability 對齊。' },
-        { title: 'SCBKR', desc: '檢視 S / C / B / K / R 治理一致性。' },
-        { title: 'R-Lock', desc: '對高風險缺口執行升級或阻擋。' },
-        { title: 'VOID', desc: '隔離不合格物件，避免驅動決策。' }
+        { title: 'CAL', desc: '檢視評論、權威、承擔是否對齊。' },
+        { title: 'SCBKR', desc: '檢視 S、C、B、K、R 的治理一致性。' },
+        { title: 'R-Lock', desc: '依風險與責任缺口決定升級或阻擋。' },
+        { title: 'VOID', desc: '隔離不合格物件，避免驅動高成本決策。' }
       ],
-      formulaTitle: 'Conceptual Formula Cards',
+      formulaTitle: '概念公式卡',
       formulas: {
-        Website: 'Decision_Eligible(w) := TYPE_COMPILE[W(w)] ∧ CAL_PASS(w) ∧ VALIDATE[SCBKR(w)] ∧ RLOCK_OK(w) ∧ VOID_FINAL(w)',
-        Image: 'Decision_Eligible(i) := TYPE_COMPILE[I(i)] ∧ CAL_PASS(i) ∧ VALIDATE[SCBKR(i)] ∧ RLOCK_OK(i) ∧ VOID_FINAL(i)',
-        Finance: 'Decision_Eligible(f) := TYPE_COMPILE[F(f)] ∧ CAL_PASS(f) ∧ VALIDATE[SCBKR(f)] ∧ RLOCK_OK(f) ∧ VOID_FINAL(f)'
+        網站: 'Decision_Eligible(w) := TYPE_COMPILE[W(w)] ∧ CAL_PASS(w) ∧ VALIDATE[SCBKR(w)] ∧ RLOCK_OK(w) ∧ VOID_FINAL(w)',
+        影像: 'Decision_Eligible(i) := TYPE_COMPILE[I(i)] ∧ CAL_PASS(i) ∧ VALIDATE[SCBKR(i)] ∧ RLOCK_OK(i) ∧ VOID_FINAL(i)',
+        金融: 'Decision_Eligible(f) := TYPE_COMPILE[F(f)] ∧ CAL_PASS(f) ∧ VALIDATE[SCBKR(f)] ∧ RLOCK_OK(f) ∧ VOID_FINAL(f)'
       },
-      boundaryTitle: 'Boundary Note',
-      boundaryBody: '本頁展示概念結構與公式，不等於完整 production 演算法。真正穩定裁決依賴 private governance core。'
+      boundaryTitle: '邊界說明',
+      boundaryBody: '本頁只展示概念結構與示意公式，不等於完整生產演算法。穩定裁決仍依賴私有治理核心。'
     },
     architecture: {
       title: '架構與部署',
-      subtitle: 'Public Showcase Shell → Private Governance Core → Enterprise Integration 的商業部署路徑。',
-      layersTitle: 'System Layers',
-      layers: ['Public Frontend Showcase', 'API Gateway', 'Private Governance Core', 'Optional Enterprise Integration Layer'],
-      showcaseTitle: 'What This Showcase Demonstrates',
-      showcase: ['structure mapping', 'sample reasoning', 'risk explanation', 'required verification', 'action gate', 'replay output'],
-      privateTitle: 'What Remains Private',
-      privateList: ['stable production calibration', 'private weight layers', 'full secure governance logic', 'final responsibility convergence'],
-      integrationTitle: 'Enterprise Integration Notes',
-      integration: ['可作為前置治理層接在 detection/risk/review 前。', '可輸出 structured required verification / action gate / replay。', '可做為跨部門風險共識介面。'],
-      rollbackTitle: 'Rollback / Verification Thinking',
-      rollback: ['先驗證官方回撥窗口，再執行高成本操作。', '未建立責任窗口前，action gate 不可放行。', '保留回滾路徑與責任收斂紀錄。'],
-      shellTitle: 'Public Showcase Shell', shell: ['展示結構與案例', '展示 required verification / action gate', '不外放主核演算法'],
-      coreTitle: 'Private Governance Core', core: ['穩定校準與權重', '完整安全治理邏輯', '最終 production verdict'],
+      subtitle: '公開展示層 → 私有治理核心 → 企業整合層的部署路徑。',
+      layersTitle: '系統分層',
+      layers: ['公開展示前端', '閘道層', '私有治理核心', '企業整合層（選配）'],
+      showcaseTitle: '本展示站呈現內容',
+      showcase: ['結構映射', '案例推理', '風險說明', '必要驗證', '行動閘門', '回放輸出'],
+      privateTitle: '仍屬私有的部分',
+      privateList: ['穩定生產校準', '私有權重層', '完整安全治理邏輯', '最終責任收斂'],
+      integrationTitle: '企業導入說明',
+      integration: ['可作為前置治理層接在既有偵測、風險、審核流程之前。', '可輸出結構化必要驗證、行動閘門與回放摘要。', '可作為跨部門風險共識介面。'],
+      rollbackTitle: '回滾與驗證思維',
+      rollback: ['先驗證官方回撥窗口，再執行高成本操作。', '未建立責任窗口前，行動閘門不得放行。', '保留回滾路徑與責任收斂紀錄。'],
+      shellTitle: '公開展示層', shell: ['展示結構與案例', '展示必要驗證與行動閘門', '不外放主核演算法'],
+      coreTitle: '私有治理核心', core: ['穩定校準與權重層', '完整安全治理邏輯', '最終生產級裁決'],
       authorTitle: '作者與聯絡資訊',
       author: ['許文耀／沈耀888π', '沉靜流派工作室負責人', '語意防火牆創辦人', '台灣台中', 'ken0963521@gmail.com', '官方網站']
     },
     footer: {
-      tagline: '企業級決策資格審計展示層（Public Showcase Shell）',
-      navTitle: 'Navigation',
+      tagline: '企業級決策資格審計展示層（公開展示殼）',
+      navTitle: '導覽',
       author: ['許文耀／沈耀888π', '沉靜流派工作室負責人', '語意防火牆創辦人', '台灣台中', 'ken0963521@gmail.com', '官方網站']
     }
   },
@@ -86,47 +86,47 @@ const content = {
     overview: {
       eyebrow: 'SCBKR × WIF Decision Eligibility Audit Engine Showcase',
       title: 'SCBKR × WIF Decision Eligibility Audit Engine Demo',
-      subtitle: 'Compiles Website, Image, and Finance input objects into responsibility-chain structures, then audits decision eligibility before they enter human decision flows.',
-      statement: 'Not a blacklist. Not a classifier. A pre-decision governance showcase layer.',
+      subtitle: 'Compiles website, image, and finance input objects into responsibility-chain structures, then audits eligibility before entering human decision flows.',
+      statement: 'This is not a blacklist and not a classifier; it is a pre-decision governance showcase layer.',
       ctaModules: 'View Modules', ctaStructure: 'View Structure', ctaArchitecture: 'View Architecture', ctaOfficial: 'Official Website',
       notBlacklistTitle: 'Why This Is Not a Blacklist',
       notBlacklistCards: [
-        { title: 'Blacklist', desc: 'records known flagged entities.' },
-        { title: 'Detector', desc: 'estimates suspiciousness signals.' },
-        { title: 'This Engine', desc: 'compiles inputs and audits decision eligibility.' }
+        { title: 'Blacklist', desc: 'Records known flagged entities.' },
+        { title: 'Detector', desc: 'Estimates suspiciousness signals only.' },
+        { title: 'This Engine', desc: 'Compiles responsibility-chain objects and audits decision eligibility.' }
       ]
     },
     modules: {
       title: 'Module Showcase',
-      subtitle: 'Show how Website, Image, and Finance input objects are compiled into responsibility-chain structures and audited through curated sample cases.',
+      subtitle: 'Curated cases demonstrate how website, image, and finance inputs move through a layered governance audit process.',
       note: 'This page is showcase-only and does not provide free-form input.',
-      selector: 'Sample Case Selector', pipeline: 'Pipeline View', result: 'Result Panel',
+      selector: 'Sample Selector', pipeline: 'Pipeline View', result: 'Result Panel',
       objectSummary: 'Object Summary', objectType: 'Object Type', sampleName: 'Sample Name', shortDescription: 'Short Description',
-      calResult: 'CAL Result', comment: 'Comment', authority: 'Authority', liability: 'Liability', misCode: 'Misalignment Code',
+      calResult: 'CAL Result', comment: 'Comment Dimension', authority: 'Authority Dimension', liability: 'Liability Dimension', misCode: 'Misalignment Code',
       scbkr: 'SCBKR Summary', riskType: 'Risk Type', missingProof: 'Missing Proof', requiredVerification: 'Required Verification',
       actionGate: 'Action Gate', replaySummary: 'Replay Summary'
     },
     structure: {
       title: 'Structure & Formula Overview',
-      subtitle: 'How Website / Image / Finance objects are compiled into responsibility-chain structures and processed by CAL / SCBKR / R-Lock / VOID.',
+      subtitle: 'Shows how website, image, and finance objects are compiled into responsibility-chain structures and processed by CAL, SCBKR, R-Lock, and VOID.',
       notBlacklist: 'Why This Is Not a Blacklist',
       compare: [
-        { title: 'Blacklist', desc: 'record: stores known lists.' },
-        { title: 'Detector', desc: 'estimate: predicts suspicion.' },
-        { title: 'This engine', desc: 'compile + audit eligibility for action.' }
+        { title: 'Blacklist', desc: 'Record list.' },
+        { title: 'Detector', desc: 'Suspicion estimate.' },
+        { title: 'This Engine', desc: 'Responsibility-chain compilation and eligibility audit.' }
       ],
       mappingTitle: 'W / I / F Object Mapping',
       mapping: [
-        { title: 'Website', items: ['domain / path / slug', 'authority borrow', 'responsibility window'] },
-        { title: 'Image', items: ['OCR / logo / CTA', 'visual authority', 'callback gap'] },
-        { title: 'Finance', items: ['payer / payee / authorization', 'urgency', 'rollback path'] }
+        { title: 'Website', items: ['domain / path / slug', 'authority borrow signal', 'responsibility window'] },
+        { title: 'Image', items: ['OCR / logo / CTA', 'visual authority signal', 'callback gap'] },
+        { title: 'Finance', items: ['payer / payee / authorization', 'urgency marker', 'rollback path'] }
       ],
       stackTitle: 'Governance Stack',
       stack: [
-        { title: 'CAL', desc: 'Checks comment / authority / liability alignment.' },
-        { title: 'SCBKR', desc: 'Checks S / C / B / K / R governance consistency.' },
-        { title: 'R-Lock', desc: 'Applies escalation or block gates on major gaps.' },
-        { title: 'VOID', desc: 'Isolates ineligible objects from action execution.' }
+        { title: 'CAL', desc: 'Checks alignment among comment, authority, and liability.' },
+        { title: 'SCBKR', desc: 'Checks governance consistency across S, C, B, K, and R.' },
+        { title: 'R-Lock', desc: 'Applies escalation or blocking based on risk-accountability gaps.' },
+        { title: 'VOID', desc: 'Isolates ineligible objects from high-cost decision execution.' }
       ],
       formulaTitle: 'Conceptual Formula Cards',
       formulas: {
@@ -135,173 +135,155 @@ const content = {
         Finance: 'Decision_Eligible(f) := TYPE_COMPILE[F(f)] ∧ CAL_PASS(f) ∧ VALIDATE[SCBKR(f)] ∧ RLOCK_OK(f) ∧ VOID_FINAL(f)'
       },
       boundaryTitle: 'Boundary Note',
-      boundaryBody: 'This page shows conceptual structure and formulas, not the full production algorithm. Stable verdicts depend on the private governance core.'
+      boundaryBody: 'This section presents conceptual structure and formulas only, not the full production algorithm. Stable verdicts rely on a private governance core.'
     },
     architecture: {
       title: 'Architecture & Deployment',
-      subtitle: 'A partner-facing route from Public Showcase Shell to Private Governance Core and Enterprise Integration.',
+      subtitle: 'A deployment path from public showcase shell to private governance core and enterprise integration.',
       layersTitle: 'System Layers',
-      layers: ['Public Frontend Showcase', 'API Gateway', 'Private Governance Core', 'Optional Enterprise Integration Layer'],
+      layers: ['Public Showcase Frontend', 'Gateway Layer', 'Private Governance Core', 'Enterprise Integration Layer (Optional)'],
       showcaseTitle: 'What This Showcase Demonstrates',
       showcase: ['structure mapping', 'sample reasoning', 'risk explanation', 'required verification', 'action gate', 'replay output'],
       privateTitle: 'What Remains Private',
       privateList: ['stable production calibration', 'private weight layers', 'full secure governance logic', 'final responsibility convergence'],
       integrationTitle: 'Enterprise Integration Notes',
-      integration: ['Can be deployed before existing detection/risk/review flows.', 'Can output structured required verification / action gate / replay.', 'Can support cross-team governance coordination.'],
-      rollbackTitle: 'Rollback / Verification Thinking',
-      rollback: ['Verify official callback channels before high-cost actions.', 'Do not pass action gate without verified responsibility window.', 'Maintain rollback paths and responsibility convergence records.'],
-      shellTitle: 'Public Showcase Shell', shell: ['Shows structure and sample cases', 'Shows required verification / action gate', 'Does not expose core algorithm'],
-      coreTitle: 'Private Governance Core', core: ['Stable calibration and weight layers', 'Full secure governance logic', 'Final production verdict'],
-      authorTitle: 'Author & Contact',
+      integration: ['Can run as a pre-decision governance layer before existing detection, risk, and review flows.', 'Can output structured required verification, action gate, and replay summaries.', 'Can serve as a cross-team governance coordination interface.'],
+      rollbackTitle: 'Rollback and Verification Thinking',
+      rollback: ['Verify official callback channels before high-cost actions.', 'Do not pass the action gate before a verified responsibility window exists.', 'Maintain rollback paths and responsibility convergence records.'],
+      shellTitle: 'Public Showcase Shell', shell: ['Shows structure and curated cases', 'Shows required verification and action gate', 'Does not expose core algorithm'],
+      coreTitle: 'Private Governance Core', core: ['stable calibration and weight layers', 'full secure governance logic', 'final production-grade verdict'],
+      authorTitle: 'Author and Contact',
       author: ['Wen-Yao Hsu / Shen-Yao 888π', 'Director, Silent School Studio', 'Founder of Semantic Firewall', 'Taichung, Taiwan', 'ken0963521@gmail.com', 'Official Website']
     },
     footer: {
-      tagline: 'Enterprise decision-eligibility governance showcase layer (Public Showcase Shell)',
+      tagline: 'Enterprise decision-eligibility governance showcase layer (public showcase shell).',
       navTitle: 'Navigation',
       author: ['Wen-Yao Hsu / Shen-Yao 888π', 'Director, Silent School Studio', 'Founder of Semantic Firewall', 'Taichung, Taiwan', 'ken0963521@gmail.com', 'Official Website']
     }
   }
 };
 
-const modulesData = {
+const moduleData = {
   website: {
-    title: { zh: 'Website', en: 'Website' },
-    intro: {
-      zh: '審計網站、頁面、文章、媒體內容是否具備可追責責任鏈。',
-      en: 'Audits whether websites/pages/articles/media carry actionable responsibility-chain integrity.'
-    },
+    title: { zh: '網站', en: 'Website' },
+    intro: { zh: '審計網站內容是否具備可追責責任鏈。', en: 'Audits whether website content provides accountable responsibility chains.' },
     samples: [
-      mkSample('Business Media Article', 'authority-heavy media object', 'comment + authority, weak liability', 'S pass / C pass / B pass / K partial / R weak', 'medium escalation', 'not sufficient for decision trust', 'WARN', ['Authority Borrow + Liability Gap'], ['Named owner missing'], ['Verify via official website channels'], '權威敘事強，但承擔不足。', 'High authority narrative with weak accountability.'),
-      mkSample('Official-Looking Campaign Page', 'official-looking campaign object', 'boundary blur, contact weak', 'S pass / C partial / B partial / K weak / R weak', 'triggered', 'insufficient trusted action evidence', 'WARN', ['Visual Authority Without Verified Responsibility'], ['Official callback channel missing', 'Rollback path missing'], ['Use official app/website for second verification'], '看似正式，但責任窗口不足。', 'Looks official, but responsibility window is weak.'),
-      mkSample('Redirect-Heavy Unknown Page', 'redirect-heavy uncertain object', 'source unstable, liability undefined', 'S weak / C partial / B weak / K weak / R fail', 'triggered', 'object disqualified', 'BLOCK', ['Boundary Weak / Responsibility Weak'], ['Source accountability not established'], ['Stop action and re-acquire from official source'], '來源追責失敗，應阻擋。', 'Source traceability fails and should be blocked.')
+      createSample('商業媒體文章', 'Business Media Article', 'authority-heavy media object', 'comment + authority, weak liability', 'S pass / C pass / B pass / K partial / R weak', 'WARN', ['權威借用與承擔缺口'], ['缺少具名責任窗口'], ['改走官方網站二次確認'], '權威敘事強，但承擔不足。', 'Authority framing is strong, but accountability is weak.'),
+      createSample('官方感活動頁面', 'Official-Looking Campaign Page', 'official-looking campaign object', 'boundary blur, contact weak', 'S pass / C partial / B partial / K weak / R weak', 'WARN', ['視覺權威但責任未驗證'], ['缺少官方回撥窗口', '缺少回滾路徑'], ['要求案件編號與具名窗口'], '頁面看似正式，但責任窗口不完整。', 'The page appears official, but accountability windows are incomplete.'),
+      createSample('多重導轉未知頁面', 'Redirect-Heavy Unknown Page', 'redirect-heavy uncertain object', 'source unstable, liability undefined', 'S weak / C partial / B weak / K weak / R fail', 'BLOCK', ['邊界與責任薄弱'], ['來源追責鏈未建立'], ['停止採用並改由官方來源重取'], '來源與邊界不穩定，應直接阻擋。', 'Source and boundary are unstable; it should be blocked.')
     ]
   },
   image: {
-    title: { zh: 'Image', en: 'Image' },
-    intro: {
-      zh: '審計圖像、公告、截圖中的視覺權威與責任窗口是否對齊。',
-      en: 'Audits whether visual authority in notices/screenshots aligns with responsibility windows.'
-    },
+    title: { zh: '影像', en: 'Image' },
+    intro: { zh: '審計影像公告是否有可信責任窗口。', en: 'Audits whether image notices provide trustworthy responsibility windows.' },
     samples: [
-      mkSample('Official-Looking Notice', 'visual authority notice object', 'authority high, callback weak', 'S pass / C partial / B pass / K weak / R weak', 'medium escalation', 'insufficient as stand-alone evidence', 'WARN', ['Visual Authority Without Verified Responsibility'], ['Official callback channel missing'], ['Verify through official phone line'], '視覺權威強，但回撥鏈不足。', 'Strong visual authority but weak callback chain.'),
-      mkSample('QR Poster With Urgency', 'urgency-driven visual CTA object', 'urgency high, accountability low', 'S weak / C pass / B partial / K weak / R fail', 'triggered', 'risk concentration exceeds tolerance', 'BLOCK', ['Sensitive Action Without Official Verification'], ['Official second verification missing'], ['Stop QR flow and use official app'], '高催促且高成本，無正式驗證鏈。', 'High urgency and high action cost without official verification.'),
-      mkSample('Fake UI Screenshot', 'interface-mimic sensitive object', 'authority mimic + verification gap', 'S weak / C partial / B weak / K weak / R fail', 'triggered', 'credential-action disqualified', 'BLOCK', ['Visual Authority Without Verified Responsibility'], ['Rollback path missing', 'Source accountability missing'], ['Stop credential input and switch to official app'], '仿介面要求敏感操作，需阻擋。', 'Mimic UI requesting sensitive actions should be blocked.')
+      createSample('官方感公告影像', 'Official-Looking Notice', 'visual authority notice object', 'authority high, callback weak', 'S pass / C partial / B pass / K weak / R weak', 'WARN', ['視覺權威但責任未驗證'], ['缺少官方回撥窗口'], ['改用官方電話或官方網站確認'], '影像權威感強，但回撥鏈不足。', 'Visual authority is strong, but callback evidence is weak.'),
+      createSample('急迫型 QR 海報', 'QR Poster With Urgency', 'urgency-driven visual CTA object', 'urgency high, accountability low', 'S weak / C pass / B partial / K weak / R fail', 'BLOCK', ['高成本行動缺少正式驗證'], ['缺少官方二次驗證鏈'], ['停止掃碼流程並改用官方應用程式'], '高催促與高成本行動並存，需阻擋。', 'Urgency and high-cost action coexist without verification, so it must be blocked.'),
+      createSample('仿冒介面截圖', 'Fake UI Screenshot', 'interface-mimic sensitive object', 'authority mimic + verification gap', 'S weak / C partial / B weak / K weak / R fail', 'BLOCK', ['視覺權威仿冒'], ['缺少回滾路徑', '缺少來源責任鏈'], ['停止輸入敏感資訊並回到官方應用程式'], '仿冒介面要求敏感操作，不得放行。', 'A mimic interface requesting sensitive action must not pass.')
     ]
   },
   finance: {
-    title: { zh: 'Finance', en: 'Finance' },
-    intro: {
-      zh: '審計交易/授權請求是否具備正式驗證鏈、責任窗口與回滾能力。',
-      en: 'Audits whether transaction/authorization requests have verification chains, accountability windows, and rollback readiness.'
-    },
+    title: { zh: '金融', en: 'Finance' },
+    intro: { zh: '審計交易授權要求是否具備正式驗證與回滾能力。', en: 'Audits whether transaction authorization requests include formal verification and rollback readiness.' },
     samples: [
-      mkSample('Urgent Transfer Request', 'sensitive transaction object', 'authority borrow + liability gap', 'S weak / C partial / B partial / K weak / R fail', 'triggered', 'block eligibility', 'BLOCK', ['Authority Borrow + Liability Gap'], ['Named owner missing', 'Rollback path missing'], ['Verify through official phone line first'], '高成本轉帳要求但責任不明。', 'High-cost transfer request with unclear responsibility.'),
-      mkSample('OTP / Login Verification Request', 'credential-sensitive authorization object', 'authority high, verification chain absent', 'S weak / C partial / B weak / K weak / R fail', 'triggered', 'credential-action disqualified', 'BLOCK', ['Sensitive Action Without Official Verification'], ['Official second-verification chain missing'], ['Use official app security center'], '敏感驗證要求無官方鏈路。', 'Sensitive credential request without official verification chain.'),
-      mkSample('Executive-Style Authorization Request', 'hierarchical authority authorization object', 'authority borrow, owner trace incomplete', 'S pass / C partial / B partial / K weak / R weak', 'high escalation', 'pending strict verification', 'WARN', ['Boundary Weak / Responsibility Weak'], ['Named authorization owner missing'], ['Request formal authorization document'], '可升級審核，不可直接執行。', 'Escalate for review, do not execute directly.')
+      createSample('緊急轉帳要求', 'Urgent Transfer Request', 'sensitive transaction object', 'authority borrow + liability gap', 'S weak / C partial / B partial / K weak / R fail', 'BLOCK', ['權威借用與承擔缺口'], ['缺少具名主責', '缺少回滾路徑'], ['先透過官方電話確認'], '高成本轉帳要求但責任不明。', 'A high-cost transfer is requested without clear accountability.'),
+      createSample('OTP／登入驗證要求', 'OTP / Login Verification Request', 'credential-sensitive authorization object', 'authority high, verification chain absent', 'S weak / C partial / B weak / K weak / R fail', 'BLOCK', ['敏感操作缺少正式驗證'], ['缺少官方二次驗證鏈'], ['改走官方應用程式安全中心'], '敏感驗證要求未建立正式驗證鏈。', 'Sensitive verification is requested without an official chain.'),
+      createSample('主管式授權要求', 'Executive-Style Authorization Request', 'hierarchical authority authorization object', 'authority borrow, owner trace incomplete', 'S pass / C partial / B partial / K weak / R weak', 'WARN', ['責任窗口薄弱'], ['缺少具名授權窗口'], ['要求正式授權文件與回滾方案'], '可升級審核，但不可直接執行。', 'Escalated review is possible, but direct execution is not allowed.')
     ]
   }
 };
 
-function mkSample(name, compiler, calLine, scbkr, rlock, vline, gate, risk, missing, required, zhReplay, enReplay) {
+function createSample(nameZh, nameEn, compiler, cal, scbkr, gate, risks, missing, required, replayZh, replayEn) {
   return {
-    name: { zh: name, en: name },
-    summary: { zh: zhReplay, en: enReplay },
+    name: { zh: nameZh, en: nameEn },
     objectType: { zh: '審計輸入物件', en: 'Audited input object' },
+    summary: { zh: replayZh, en: replayEn },
     pipeline: [
       { node: 'INPUT OBJECT', result: 'sample object' },
       { node: 'W / I / F Compiler', result: compiler },
-      { node: 'CAL', result: calLine },
+      { node: 'CAL', result: cal },
       { node: 'SCBKR', result: scbkr },
-      { node: 'R-Lock', result: rlock },
-      { node: 'VOID', result: vline },
+      { node: 'R-Lock', result: gate === 'BLOCK' ? 'triggered' : 'escalation required' },
+      { node: 'VOID', result: gate === 'BLOCK' ? 'ineligible for decision trust' : 'pending stricter verification' },
       { node: 'Verdict', result: gate }
     ],
-    cal: { comment: calLine, authority: 'context-dependent', liability: 'context-dependent', code: 'CAL-SHOWCASE' },
-    scbkr: scbkr.split(' / ').map((item) => item.trim()),
-    riskType: risk,
+    cal: { comment: cal, authority: 'context-dependent', liability: 'context-dependent', code: 'CAL-SHOWCASE' },
+    scbkr: scbkr.split(' / ').map((x) => x.trim()),
+    riskType: risks,
     missingProof: missing,
     required,
     gate,
-    replay: { zh: zhReplay, en: enReplay }
+    replay: { zh: replayZh, en: replayEn }
   };
 }
 
 let lang = 'zh';
-let moduleKey = 'website';
-const sampleIndex = { website: 0, image: 0, finance: 0 };
+let activeModule = 'website';
+const activeSample = { website: 0, image: 0, finance: 0 };
 
-const qs = (s) => document.querySelector(s);
-const qsa = (s) => Array.from(document.querySelectorAll(s));
+const qs = (sel) => document.querySelector(sel);
+const qsa = (sel) => Array.from(document.querySelectorAll(sel));
 
-function renderI18n() {
+function renderStaticText() {
   qsa('[data-i18n]').forEach((el) => {
     const path = el.dataset.i18n.split('.');
-    let value = content[lang];
-    path.forEach((k) => (value = value[k]));
-    el.textContent = value;
+    let obj = i18n[lang];
+    path.forEach((k) => (obj = obj[k]));
+    el.textContent = obj;
   });
-
-  qs('#notBlacklistCards').innerHTML = content[lang].overview.notBlacklistCards
-    .map((c) => `<article class="card"><h3>${c.title}</h3><p>${c.desc}</p></article>`)
-    .join('');
-
-  renderStructure();
-  renderArchitecture();
-  renderFooterAuthor();
-  renderModule();
 }
 
-function renderModule() {
-  const t = content[lang].modules;
-  const module = modulesData[moduleKey];
-  const sample = module.samples[sampleIndex[moduleKey]];
+function renderOverview() {
+  qs('#notBlacklistCards').innerHTML = i18n[lang].overview.notBlacklistCards
+    .map((x) => `<article class="card"><h3>${x.title}</h3><p>${x.desc}</p></article>`)
+    .join('');
+}
+
+function renderModules() {
+  const text = i18n[lang].modules;
+  const module = moduleData[activeModule];
+  const sample = module.samples[activeSample[activeModule]];
 
   qs('#moduleTabs').innerHTML = ['website', 'image', 'finance']
-    .map((k) => `<button class="${moduleKey === k ? 'active' : ''}" data-tab="${k}">${modulesData[k].title[lang]}</button>`)
+    .map((key) => `<button class="${key === activeModule ? 'active' : ''}" data-module="${key}">${moduleData[key].title[lang]}</button>`)
     .join('');
 
   qs('#moduleIntro').innerHTML = `<h3>${module.title[lang]}</h3><p>${module.intro[lang]}</p>`;
-
   qs('#sampleButtons').innerHTML = module.samples
-    .map((s, i) => `<button class="sample-btn ${sampleIndex[moduleKey] === i ? 'active' : ''}" data-sample="${i}"><strong>${s.name[lang]}</strong><span>${s.summary[lang]}</span></button>`)
+    .map((s, i) => `<button class="sample-btn ${i === activeSample[activeModule] ? 'active' : ''}" data-index="${i}"><strong>${s.name[lang]}</strong><span>${s.summary[lang]}</span></button>`)
     .join('');
-
   qs('#pipelineSteps').innerHTML = sample.pipeline.map((p) => `<article class="pipe-step"><b>${p.node}</b><p>${p.result}</p></article>`).join('');
 
-  qs('#objectSummary').innerHTML = `<h4>${t.objectSummary}</h4><div class="dl"><div><b>${t.objectType}</b><span>${sample.objectType[lang]}</span></div><div><b>${t.sampleName}</b><span>${sample.name[lang]}</span></div><div><b>${t.shortDescription}</b><span>${sample.summary[lang]}</span></div></div>`;
-  qs('#calResult').innerHTML = `<h4>${t.calResult}</h4><div class="dl"><div><b>${t.comment}</b><span>${sample.cal.comment}</span></div><div><b>${t.authority}</b><span>${sample.cal.authority}</span></div><div><b>${t.liability}</b><span>${sample.cal.liability}</span></div><div><b>${t.misCode}</b><span>${sample.cal.code}</span></div></div>`;
-  qs('#scbkrSummary').innerHTML = `<h4>${t.scbkr}</h4><div class="scbkr-tags">${sample.scbkr.map((x) => `<span class="tag">${x}</span>`).join('')}</div>`;
-  qs('#riskType').innerHTML = `<h4>${t.riskType}</h4><ul>${sample.riskType.map((x) => `<li>${x}</li>`).join('')}</ul>`;
-  qs('#missingProof').innerHTML = `<h4>${t.missingProof}</h4><ul>${sample.missingProof.map((x) => `<li>${x}</li>`).join('')}</ul>`;
-  qs('#requiredVerification').innerHTML = `<h4>${t.requiredVerification}</h4><ul>${sample.required.map((x) => `<li>${x}</li>`).join('')}</ul>`;
-  qs('#actionGate').innerHTML = `<h4>${t.actionGate}</h4><span class="gate gate-${sample.gate}">${sample.gate}</span>`;
-  qs('#replaySummary').innerHTML = `<h4>${t.replaySummary}</h4><p>${sample.replay[lang]}</p>`;
+  qs('#objectSummary').innerHTML = `<h4>${text.objectSummary}</h4><div class="dl"><div><b>${text.objectType}</b><span>${sample.objectType[lang]}</span></div><div><b>${text.sampleName}</b><span>${sample.name[lang]}</span></div><div><b>${text.shortDescription}</b><span>${sample.summary[lang]}</span></div></div>`;
+  qs('#calResult').innerHTML = `<h4>${text.calResult}</h4><div class="dl"><div><b>${text.comment}</b><span>${sample.cal.comment}</span></div><div><b>${text.authority}</b><span>${sample.cal.authority}</span></div><div><b>${text.liability}</b><span>${sample.cal.liability}</span></div><div><b>${text.misCode}</b><span>${sample.cal.code}</span></div></div>`;
+  qs('#scbkrSummary').innerHTML = `<h4>${text.scbkr}</h4><div class="scbkr-tags">${sample.scbkr.map((item) => `<span class="tag">${item}</span>`).join('')}</div>`;
+  qs('#riskType').innerHTML = `<h4>${text.riskType}</h4><ul>${sample.riskType.map((item) => `<li>${item}</li>`).join('')}</ul>`;
+  qs('#missingProof').innerHTML = `<h4>${text.missingProof}</h4><ul>${sample.missingProof.map((item) => `<li>${item}</li>`).join('')}</ul>`;
+  qs('#requiredVerification').innerHTML = `<h4>${text.requiredVerification}</h4><ul>${sample.required.map((item) => `<li>${item}</li>`).join('')}</ul>`;
+  qs('#actionGate').innerHTML = `<h4>${text.actionGate}</h4><span class="gate gate-${sample.gate}">${sample.gate}</span>`;
+  qs('#replaySummary').innerHTML = `<h4>${text.replaySummary}</h4><p>${sample.replay[lang]}</p>`;
 
   qsa('#moduleTabs button').forEach((btn) => btn.addEventListener('click', () => {
-    moduleKey = btn.dataset.tab;
-    renderModule();
+    activeModule = btn.dataset.module;
+    renderModules();
   }));
   qsa('#sampleButtons button').forEach((btn) => btn.addEventListener('click', () => {
-    sampleIndex[moduleKey] = Number(btn.dataset.sample);
-    renderModule();
+    activeSample[activeModule] = Number(btn.dataset.index);
+    renderModules();
   }));
 }
 
 function renderStructure() {
-  const s = content[lang].structure;
+  const s = i18n[lang].structure;
   qs('#structureCompare').innerHTML = s.compare.map((x) => `<article class="card"><h4>${x.title}</h4><p>${x.desc}</p></article>`).join('');
-  qs('#structureMapping').innerHTML = s.mapping
-    .map((m) => `<article class="card"><h4>${m.title}</h4><ul>${m.items.map((i) => `<li>${i}</li>`).join('')}</ul></article>`)
-    .join('');
-  qs('#governanceStack').innerHTML = s.stack.map((g) => `<article class="card"><h4>${g.title}</h4><p>${g.desc}</p></article>`).join('');
-  qs('#formulaCards').innerHTML = Object.entries(s.formulas)
-    .map(([k, v]) => `<article class="card"><h4>${k}</h4><code>${v}</code></article>`)
-    .join('');
+  qs('#structureMapping').innerHTML = s.mapping.map((x) => `<article class="card"><h4>${x.title}</h4><ul>${x.items.map((i) => `<li>${i}</li>`).join('')}</ul></article>`).join('');
+  qs('#governanceStack').innerHTML = s.stack.map((x) => `<article class="card"><h4>${x.title}</h4><p>${x.desc}</p></article>`).join('');
+  qs('#formulaCards').innerHTML = Object.entries(s.formulas).map(([k,v]) => `<article class="card"><h4>${k}</h4><code>${v}</code></article>`).join('');
 }
 
 function renderArchitecture() {
-  const a = content[lang].architecture;
-  qs('#layerFlow').innerHTML = a.layers.map((l) => `<div class="layer">${l}</div>`).join('');
+  const a = i18n[lang].architecture;
+  qs('#layerFlow').innerHTML = a.layers.map((x) => `<div class="layer">${x}</div>`).join('');
   qs('#showcaseList').innerHTML = a.showcase.map((x) => `<li>${x}</li>`).join('');
   qs('#privateList').innerHTML = a.privateList.map((x) => `<li>${x}</li>`).join('');
   qs('#integrationList').innerHTML = a.integration.map((x) => `<li>${x}</li>`).join('');
@@ -312,8 +294,25 @@ function renderArchitecture() {
 }
 
 function renderFooterAuthor() {
-  const a = content[lang].footer.author;
+  const a = i18n[lang].footer.author;
   qs('#footerAuthor').innerHTML = `<h4>${a[0]}</h4><p>${a[1]}</p><p>${a[2]}</p><p>${a[3]}</p><p><a href="mailto:${a[4]}">${a[4]}</a></p><p><a href="${OFFICIAL_SITE}" target="_blank" rel="noreferrer">${a[5]}</a></p><small>𓂀𒀭𐘀ꙮΩ888π</small>`;
+}
+
+function renderAll() {
+  renderStaticText();
+  renderOverview();
+  renderModules();
+  renderStructure();
+  renderArchitecture();
+  renderFooterAuthor();
+}
+
+function setLang(next) {
+  lang = next;
+  qs('#langZh').classList.toggle('active', next === 'zh');
+  qs('#langEn').classList.toggle('active', next === 'en');
+  document.documentElement.lang = next === 'zh' ? 'zh-Hant' : 'en';
+  renderAll();
 }
 
 function setupEvents() {
@@ -323,13 +322,5 @@ function setupEvents() {
   qsa('#mainNav a').forEach((a) => a.addEventListener('click', () => qs('#mainNav').classList.remove('open')));
 }
 
-function setLang(next) {
-  lang = next;
-  qs('#langZh').classList.toggle('active', next === 'zh');
-  qs('#langEn').classList.toggle('active', next === 'en');
-  document.documentElement.lang = next === 'zh' ? 'zh-Hant' : 'en';
-  renderI18n();
-}
-
 setupEvents();
-renderI18n();
+renderAll();
