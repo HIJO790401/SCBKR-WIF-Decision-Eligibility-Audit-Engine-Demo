@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import ModuleShowcase from './components/ModuleShowcase';
 
 type Lang = 'zh' | 'en';
 
@@ -281,41 +282,7 @@ function App() {
           </div>
         </section>
 
-        <section id="modules" className="section">
-          <div className="container">
-            <h2>{t.compilers.title}</h2>
-            <p className="section-intro">{t.modulesPreview.desc}</p>
-            <div className="grid three">
-              {t.compilers.cards.map((card) => (
-                <article key={card.title} className="card module-card">
-                  <h3>{card.title}</h3>
-                  <p>{card.desc}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="section light">
-          <div className="container">
-            <h2>{t.pipeline.title}</h2>
-            <div className="pipeline">
-              {t.pipeline.steps.map(([name, cap]) => (
-                <div key={name} className="pipe-node" title={cap}>
-                  <strong>{name}</strong>
-                  <span>{cap}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="section">
-          <div className="container shell-core">
-            <h2>{t.shellCore.title}</h2>
-            <p>{t.shellCore.desc}</p>
-          </div>
-        </section>
+        <ModuleShowcase lang={lang} />
 
         <section id="structure" className="section light">
           <div className="container">
