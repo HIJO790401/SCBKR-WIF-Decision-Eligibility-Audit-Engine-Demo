@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react';
 import ModuleShowcase from './components/ModuleShowcase';
+import StructureOverview from './components/StructureOverview';
+import ArchitectureOverview from './components/ArchitectureOverview';
 
 type Lang = 'zh' | 'en';
 
@@ -284,49 +286,9 @@ function App() {
 
         <ModuleShowcase lang={lang} />
 
-        <section id="structure" className="section light">
-          <div className="container">
-            <h2>{t.structurePreview.title}</h2>
-            <div className="grid two">
-              {t.structurePreview.bullets.map((bullet) => (
-                <article key={bullet} className="card">
-                  <p>{bullet}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
+        <StructureOverview lang={lang} />
 
-        <section id="architecture" className="section">
-          <div className="container">
-            <h2>{t.architecturePreview.title}</h2>
-            <div className="grid two">
-              {t.architecturePreview.bullets.map((bullet) => (
-                <article key={bullet} className="card">
-                  <p>{bullet}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="section light">
-          <div className="container author">
-            <h2>{t.author.title}</h2>
-            <p>{t.author.name}</p>
-            <p>{t.author.role1}</p>
-            <p>{t.author.role2}</p>
-            <p>{t.author.location}</p>
-            <p>
-              Email: <a href={`mailto:${t.author.email}`}>{t.author.email}</a>
-            </p>
-            <p>
-              <a href={OFFICIAL_SITE} target="_blank" rel="noreferrer">
-                {t.author.official}
-              </a>
-            </p>
-          </div>
-        </section>
+        <ArchitectureOverview lang={lang} />
       </main>
 
       <footer className="footer">
@@ -352,6 +314,8 @@ function App() {
           </div>
           <div>
             <h4>{t.author.name}</h4>
+            <p>{t.author.role1}</p>
+            <p>{t.author.role2}</p>
             <p>{t.author.location}</p>
             <p>
               <a href={`mailto:${t.author.email}`}>{t.author.email}</a>

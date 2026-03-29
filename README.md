@@ -1,81 +1,103 @@
 # SCBKR-WIF-Decision-Eligibility-Audit-Engine-Demo
 
-A deployable React + Vite + TypeScript GitHub Pages project-site showcase for:
+Enterprise-grade public showcase site for the **SCBKR × WIF Decision Eligibility Audit Engine**.
 
-**SCBKR × WIF Decision Eligibility Audit Engine Demo**
-
----
-
-> Note: if your code review platform does not support binary preview/diff, this project can run without hero image binaries (uses gradient hero fallback in CSS).
-
-## Project Positioning / 專案定位
-
-This is a **pure showcase site** for enterprise governance communication (platforms, banks, and partners).
-It is designed to explain system positioning, module boundaries, governance flow, and integration direction.
-
-這是一個**純展示型**企業治理展示站，用於讓企業/平台/銀行/合作方快速理解系統定位、流程與落地方式。
+This project is built with **React + Vite + TypeScript** and prepared for **GitHub Pages project-site deployment**.
 
 ---
 
-## Not a Blacklist / 這不是黑名單
+## Project Overview
 
-This project is intentionally **not**:
+This site is designed for enterprise/platform/banking partners to understand:
 
-- a blacklist lookup website
-- a free-form user input tool
-- a fraud classifier dashboard
+- what the engine does,
+- why it is not a blacklist lookup page,
+- how Website / Image / Finance inputs are handled,
+- how governance outputs can integrate into risk/review flows.
 
-It is a **pre-decision governance showcase layer**.
-Stable production-grade verdicts depend on a private governance core.
-
-此站不是黑名單查詢頁、不是自由輸入工具，也不是玩具化分類器；而是前置治理展示層，正式穩定裁決依賴 private governance core。
+It is a **showcase shell**, not a free-form operations tool.
 
 ---
 
-## Three Input Modules / 三模組
+## Why This Is Not a Blacklist
 
-- **Website**: Audit responsibility-chain structure of websites, pages, articles, and media objects.
-- **Image**: Audit responsibility-chain structure of images, screenshots, notices, posters, and visual authority objects.
-- **Finance**: Audit responsibility-chain structure for transactions, authorizations, and high-risk asset transfer requests.
-
----
-
-## Governance Pipeline Preview
-
-```text
-INPUT
-→ W / I / F Compiler
-→ CAL
-→ SCBKR
-→ R-Lock
-→ VOID
-→ Verdict
-```
-
-The site demonstrates conceptual governance flow and architecture boundaries without exposing private core algorithms.
+- **Blacklist** = records known flagged entities.
+- **Detector** = estimates suspiciousness signals.
+- **This Engine** = compiles input objects into responsibility-chain structures and audits decision eligibility.
 
 ---
 
-## Bilingual UI
+## Three Modules
 
-The entire UI supports full language switching:
+### 1) Website
+Audits websites/pages/articles/media for authority borrowing, boundary quality, and responsibility windows.
 
-- 繁體中文
-- English
+### 2) Image
+Audits notices/screenshots/posters for OCR/visual authority signals, CTA risk, and callback gaps.
 
-Includes navigation, hero, module descriptions, structure preview, architecture preview, author info, and footer.
+### 3) Finance
+Audits transaction/authorization requests for urgency, accountability, verification chain, and rollback readiness.
+
+Each module uses curated local sample cases (no free-form input, no upload, no API dependency).
 
 ---
 
-## GitHub Pages Deployment Notes
+## Governance Stack
 
-This repository is configured as a **project site** and uses Vite `base`:
+Unified conceptual stack shown across modules:
+
+`INPUT OBJECT → W / I / F Compiler → CAL → SCBKR → R-Lock → VOID → Verdict`
+
+- **CAL**: comment / authority / liability alignment
+- **SCBKR**: structured governance consistency checks
+- **R-Lock**: risk-accountability gate
+- **VOID**: isolate ineligible objects from decision execution
+
+---
+
+## Structure Page
+
+The **Structure & Formula Overview** page presents:
+
+- Why this engine is not a blacklist
+- W/I/F object mapping
+- Governance stack cards
+- Conceptual formula cards (non-private)
+- Boundary notes for partner understanding
+
+Conceptual formulas are intentionally illustrative and do **not** expose private production logic.
+
+---
+
+## Architecture Page
+
+The **Architecture & Deployment** page presents:
+
+- layered flow: Public Frontend Showcase → API Gateway → Private Governance Core → Optional Enterprise Integration Layer
+- what the showcase demonstrates (structure/risk/reasoning outputs)
+- what remains private (calibration/weights/full secure logic)
+- enterprise integration notes
+- Public Shell vs Private Core comparison
+
+---
+
+## Public Shell / Private Core Boundary
+
+This frontend demonstrates structure, sample reasoning, risk explanation, required verification, action gate, and replay output.
+
+Stable production-grade verdicts depend on a **private governance core** and are intentionally not disclosed in this public demo.
+
+---
+
+## GitHub Pages Deployment
+
+This repository is configured as a GitHub Pages **project site** with Vite base:
 
 ```ts
 base: '/SCBKR-WIF-Decision-Eligibility-Audit-Engine-Demo/'
 ```
 
-### Commands
+### Local commands
 
 ```bash
 npm install
@@ -84,11 +106,11 @@ npm run build
 npm run preview
 ```
 
-Deploy the generated `dist/` directory to GitHub Pages.
+Deploy the `dist/` output to GitHub Pages.
 
 ---
 
-## Author / 品牌資訊
+## Author / Contact
 
 **中文**
 - 許文耀／沈耀888π

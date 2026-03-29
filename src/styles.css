@@ -327,3 +327,58 @@ a:hover { text-decoration: underline; }
   .showcase-grid { grid-template-columns: 1fr; }
   .result-block dl div { grid-template-columns: 1fr; }
 }
+
+.section-head p { color: #3a608d; line-height: 1.7; max-width: 84ch; }
+.grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.structure-overview h3,
+.architecture-overview h3 { margin-top: 1.3rem; color: #123f74; }
+
+.structure-overview ul,
+.architecture-overview ul { margin: 0; padding-left: 1.1rem; color: #3b5f8d; line-height: 1.7; }
+
+.formula-cards code {
+  display: block;
+  white-space: normal;
+  word-break: break-word;
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  color: #17497f;
+  background: #f4f8ff;
+  border: 1px solid #d6e5f8;
+  border-radius: 10px;
+  padding: 0.7rem;
+  font-size: 0.83rem;
+}
+
+.layer-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.layer-node {
+  background: #f6faff;
+  border: 1px solid #cfdef3;
+  border-radius: 12px;
+  padding: 0.8rem;
+  color: #1c4a80;
+  font-weight: 600;
+  text-align: center;
+}
+
+.integration-card { margin: 1rem 0; }
+.shell-vs-core h4 { margin: 0 0 0.6rem; color: #163f73; }
+
+.architecture-author { margin-top: 1rem; }
+.architecture-author p { margin: 0.28rem 0; color: #355a88; }
+
+@media (max-width: 1100px) {
+  .grid.four,
+  .layer-flow { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 760px) {
+  .grid.four,
+  .layer-flow { grid-template-columns: 1fr; }
+}
