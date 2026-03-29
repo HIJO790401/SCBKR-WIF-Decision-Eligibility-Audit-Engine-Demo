@@ -1,116 +1,88 @@
 # SCBKR-WIF-Decision-Eligibility-Audit-Engine-Demo
 
-Enterprise-grade public showcase site for the **SCBKR × WIF Decision Eligibility Audit Engine**.
+A **pure static GitHub Pages showcase site** for the SCBKR × WIF Decision Eligibility Audit Engine.
 
-This project is built with **React + Vite + TypeScript** and prepared for **GitHub Pages project-site deployment**.
+This repository intentionally uses only:
 
----
+- `index.html`
+- `styles.css`
+- `app.js`
 
-## Project Overview
-
-This site is designed for enterprise/platform/banking partners to understand:
-
-- what the engine does,
-- why it is not a blacklist lookup page,
-- how Website / Image / Finance inputs are handled,
-- how governance outputs can integrate into risk/review flows.
-
-It is a **showcase shell**, not a free-form operations tool.
+No React, no Vite, no TypeScript, no npm, and no build step.
 
 ---
 
-## Why This Is Not a Blacklist
+## What this site is
 
-- **Blacklist** = records known flagged entities.
-- **Detector** = estimates suspiciousness signals.
-- **This Engine** = compiles input objects into responsibility-chain structures and audits decision eligibility.
+This is a business-facing governance showcase used to explain:
 
----
-
-## Three Modules
-
-### 1) Website
-Audits websites/pages/articles/media for authority borrowing, boundary quality, and responsibility windows.
-
-### 2) Image
-Audits notices/screenshots/posters for OCR/visual authority signals, CTA risk, and callback gaps.
-
-### 3) Finance
-Audits transaction/authorization requests for urgency, accountability, verification chain, and rollback readiness.
-
-Each module uses curated local sample cases (no free-form input, no upload, no API dependency).
+- how Website / Image / Finance inputs are audited,
+- how CAL / SCBKR / R-Lock / VOID are presented in a governance pipeline,
+- how required verification / action gate / rollback thinking are communicated,
+- and why stable production verdicts remain in a private core.
 
 ---
 
-## Governance Stack
+## Why this is not a blacklist
 
-Unified conceptual stack shown across modules:
-
-`INPUT OBJECT → W / I / F Compiler → CAL → SCBKR → R-Lock → VOID → Verdict`
-
-- **CAL**: comment / authority / liability alignment
-- **SCBKR**: structured governance consistency checks
-- **R-Lock**: risk-accountability gate
-- **VOID**: isolate ineligible objects from decision execution
+- **Blacklist**: records known flagged entities.
+- **Detector**: estimates suspiciousness.
+- **This engine showcase**: demonstrates compile + eligibility audit logic and governance reasoning.
 
 ---
 
-## Structure Page
+## Three modules in the showcase
 
-The **Structure & Formula Overview** page presents:
+- **Website**
+- **Image**
+- **Finance**
 
-- Why this engine is not a blacklist
-- W/I/F object mapping
-- Governance stack cards
-- Conceptual formula cards (non-private)
-- Boundary notes for partner understanding
+Each module includes curated sample cases (button-switch only, no free-form user input), and each sample displays:
 
-Conceptual formulas are intentionally illustrative and do **not** expose private production logic.
-
----
-
-## Architecture Page
-
-The **Architecture & Deployment** page presents:
-
-- layered flow: Public Frontend Showcase → API Gateway → Private Governance Core → Optional Enterprise Integration Layer
-- what the showcase demonstrates (structure/risk/reasoning outputs)
-- what remains private (calibration/weights/full secure logic)
-- enterprise integration notes
-- Public Shell vs Private Core comparison
+- Object Summary
+- Pipeline
+- CAL Result
+- SCBKR Summary
+- Risk Type
+- Missing Proof
+- Required Verification
+- Action Gate
+- Replay Summary
 
 ---
 
-## Public Shell / Private Core Boundary
+## Included sections
 
-This frontend demonstrates structure, sample reasoning, risk explanation, required verification, action gate, and replay output.
+Single-page anchor sections:
 
-Stable production-grade verdicts depend on a **private governance core** and are intentionally not disclosed in this public demo.
-
----
-
-## GitHub Pages Deployment
-
-This repository is configured as a GitHub Pages **project site** with Vite base:
-
-```ts
-base: '/SCBKR-WIF-Decision-Eligibility-Audit-Engine-Demo/'
-```
-
-### Local commands
-
-```bash
-npm install
-npm run dev
-npm run build
-npm run preview
-```
-
-Deploy the `dist/` output to GitHub Pages.
+1. Overview
+2. Modules
+3. Structure
+4. Architecture
+5. Official Website (external link)
 
 ---
 
-## Author / Contact
+## Public showcase boundary
+
+This public page shows structure, sample reasoning, verification requirements, and action gates.
+
+It does **not** expose the full private production algorithm.
+Stable production-grade verdicts require the private governance core.
+
+---
+
+## GitHub Pages deployment
+
+Because this is pure static HTML/CSS/JS:
+
+1. Push `index.html`, `styles.css`, `app.js`, and `README.md` to the repository.
+2. Enable GitHub Pages for the branch/folder you publish.
+3. No install/build pipeline is required.
+
+---
+
+## Author
 
 **中文**
 - 許文耀／沈耀888π
