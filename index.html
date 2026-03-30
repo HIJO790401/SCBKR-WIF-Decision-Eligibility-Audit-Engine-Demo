@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SCBKR × WIF Decision Eligibility Audit Engine Demo - static bilingual governance showcase for Website, Image, Finance modules."
+    />
+    <title>SCBKR × WIF Decision Eligibility Audit Engine Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#overview">SCBKR × WIF</a>
+        <button class="menu-btn" id="menuBtn" aria-label="toggle menu">☰</button>
+        <nav id="mainNav" class="nav">
+          <a href="#overview" data-i18n="nav.overview"></a>
+          <a href="#modules" data-i18n="nav.modules"></a>
+          <a href="#structure" data-i18n="nav.structure"></a>
+          <a href="#architecture" data-i18n="nav.architecture"></a>
+          <a href="https://hijo790401.github.io/shen-yao-portal/" target="_blank" rel="noreferrer" data-i18n="nav.official"></a>
+        </nav>
+        <div class="lang-toggle">
+          <button id="langZh" class="active">中文</button>
+          <button id="langEn">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="overview" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow" data-i18n="overview.eyebrow"></p>
+          <h1 data-i18n="overview.title"></h1>
+          <p class="subtitle" data-i18n="overview.subtitle"></p>
+          <p class="statement" data-i18n="overview.statement"></p>
+          <div class="cta-row">
+            <a href="#modules" class="btn" data-i18n="overview.ctaModules"></a>
+            <a href="#structure" class="btn" data-i18n="overview.ctaStructure"></a>
+            <a href="#architecture" class="btn" data-i18n="overview.ctaArchitecture"></a>
+            <a href="https://hijo790401.github.io/shen-yao-portal/" target="_blank" rel="noreferrer" class="btn" data-i18n="overview.ctaOfficial"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light">
+        <div class="container">
+          <h2 data-i18n="overview.notBlacklistTitle"></h2>
+          <div class="grid three" id="notBlacklistCards"></div>
+        </div>
+      </section>
+
+      <section id="modules" class="section modules">
+        <div class="container">
+          <header class="section-head">
+            <h2 data-i18n="modules.title"></h2>
+            <p data-i18n="modules.subtitle"></p>
+            <p class="showcase-note" data-i18n="modules.note"></p>
+          </header>
+
+          <div class="tabs" id="moduleTabs"></div>
+          <article class="card" id="moduleIntro"></article>
+
+          <div class="modules-grid">
+            <aside class="card">
+              <h3 data-i18n="modules.selector"></h3>
+              <div id="sampleButtons" class="sample-buttons"></div>
+            </aside>
+
+            <section class="card">
+              <h3 data-i18n="modules.pipeline"></h3>
+              <div id="pipelineSteps" class="pipeline-steps"></div>
+            </section>
+
+            <section class="card">
+              <h3 data-i18n="modules.result"></h3>
+              <div class="result-block" id="objectSummary"></div>
+              <div class="result-block" id="calResult"></div>
+              <div class="result-block" id="scbkrSummary"></div>
+              <div class="result-block" id="riskType"></div>
+              <div class="result-block" id="missingProof"></div>
+              <div class="result-block" id="requiredVerification"></div>
+              <div class="result-block" id="actionGate"></div>
+              <div class="result-block" id="replaySummary"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="structure" class="section light">
+        <div class="container">
+          <header class="section-head">
+            <h2 data-i18n="structure.title"></h2>
+            <p data-i18n="structure.subtitle"></p>
+          </header>
+
+          <h3 data-i18n="structure.notBlacklist"></h3>
+          <div class="grid three" id="structureCompare"></div>
+
+          <h3 data-i18n="structure.mappingTitle"></h3>
+          <div class="grid three" id="structureMapping"></div>
+
+          <h3 data-i18n="structure.stackTitle"></h3>
+          <div class="grid four" id="governanceStack"></div>
+
+          <h3 data-i18n="structure.formulaTitle"></h3>
+          <div class="grid three" id="formulaCards"></div>
+
+          <article class="card boundary-card">
+            <h4 data-i18n="structure.boundaryTitle"></h4>
+            <p data-i18n="structure.boundaryBody"></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="architecture" class="section">
+        <div class="container">
+          <header class="section-head">
+            <h2 data-i18n="architecture.title"></h2>
+            <p data-i18n="architecture.subtitle"></p>
+          </header>
+
+          <h3 data-i18n="architecture.layersTitle"></h3>
+          <div class="layer-flow" id="layerFlow"></div>
+
+          <div class="grid two">
+            <article class="card">
+              <h3 data-i18n="architecture.showcaseTitle"></h3>
+              <ul id="showcaseList"></ul>
+            </article>
+            <article class="card">
+              <h3 data-i18n="architecture.privateTitle"></h3>
+              <ul id="privateList"></ul>
+            </article>
+          </div>
+
+          <article class="card">
+            <h3 data-i18n="architecture.integrationTitle"></h3>
+            <ul id="integrationList"></ul>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="architecture.rollbackTitle"></h3>
+            <ul id="rollbackList"></ul>
+          </article>
+
+          <div class="grid two">
+            <article class="card">
+              <h4 data-i18n="architecture.shellTitle"></h4>
+              <ul id="shellList"></ul>
+            </article>
+            <article class="card">
+              <h4 data-i18n="architecture.coreTitle"></h4>
+              <ul id="coreList"></ul>
+            </article>
+          </div>
+
+          <article class="card author-card" id="authorBlock"></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <section>
+          <h3>SCBKR-WIF-Decision-Eligibility-Audit-Engine-Demo</h3>
+          <p data-i18n="footer.tagline"></p>
+        </section>
+        <section>
+          <h4 data-i18n="footer.navTitle"></h4>
+          <ul>
+            <li><a href="#overview" data-i18n="nav.overview"></a></li>
+            <li><a href="#modules" data-i18n="nav.modules"></a></li>
+            <li><a href="#structure" data-i18n="nav.structure"></a></li>
+            <li><a href="#architecture" data-i18n="nav.architecture"></a></li>
+            <li><a href="https://hijo790401.github.io/shen-yao-portal/" target="_blank" rel="noreferrer" data-i18n="nav.official"></a></li>
+          </ul>
+        </section>
+        <section id="footerAuthor"></section>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
