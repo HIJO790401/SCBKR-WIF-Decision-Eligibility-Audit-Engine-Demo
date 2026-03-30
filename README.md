@@ -1,6 +1,6 @@
 # SCBKR-WIF-Decision-Eligibility-Audit-Engine-Demo
 
-## 中文（第一人稱・法律／商務對外介紹）
+## 中文（・法律／商務對外介紹）
 
 您好，我是許文耀（沈耀888π）。
 
@@ -68,7 +68,7 @@
 
 ---
 
-### 法律與責任聲明（對外版本）
+### 法律與責任聲明
 
 我在本網站提供之內容，屬於展示、說明與治理溝通用途。
 
@@ -106,7 +106,7 @@ Email: ken0963521@gmail.com
 
 ---
 
-## English (First-Person · External Legal/Business Introduction)
+## English 
 
 Hello, I am Wen-Yao Hsu (Shen-Yao 888π).
 
@@ -173,7 +173,7 @@ The intent is not to output a simplistic score, but to provide readable governan
 
 ---
 
-### Legal and Responsibility Notice (External)
+### Legal and Responsibility Notice 
 
 The material on this website is provided for showcase, explanation, and governance communication purposes.
 
@@ -188,7 +188,7 @@ Any high-risk or high-cost final decision should be completed through the privat
 
 ---
 
-### Deployment (Pure Static)
+### Deployment 
 
 This project can be deployed directly via GitHub Pages:
 
